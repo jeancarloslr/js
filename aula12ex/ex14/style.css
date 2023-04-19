@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kanit&display=swap');
+
+:root{
+
+    --cor1: #03A678;
+    --cor2: #02735E;
+    --cor3: #014040;
+    --cor4: #F27405;
+    --cor5: #731702;
+    
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: var(--cor3);
+    font: normal 1em 'Kanit', sans-serif; 
+    
+}
+
+header{
+   color: var(--cor4);
+   margin-top: 10px;
+   text-align: center;
+}
+
+
+section{
+   background-color: var(--cor1);
+   width: 500px;
+   height: 350px;
+   margin: auto;
+   margin-top: 50px;
+   border-radius: 10px;
+   padding: 15px;
+   color: var(--cor5);
+   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+div{
+    text-align: center;
+    padding: 13px;
+}
+
+footer{
+    color: var(--cor4);
+    margin-top: 25px;
+    text-align: center;
+    font-style: italic;
+}
+
+#msg{
+    font-size: 1.3em;
+}

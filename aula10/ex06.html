@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        body{
+            background-color: rgb(23, 22, 22);
+            color: white;
+            text-align: center;
+        }
+
+        #area{
+            font: bold 1.3em sans-serif;
+            background-color: blue;
+            width: 230px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+            color: white;
+            border-radius: 50px;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Eventos DOM</h1>
+    <div id="area">
+        interaja...
+    </div>
+
+    <script>
+     var a = window.document.getElementById('area')
+
+     a.addEventListener('mouseenter', enter)
+     a.addEventListener('mouseout', saiu)
+     a.addEventListener('click', clicar)
+     
+    </script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com o DOM</title>
+    <style>
+        body{
+            background-color: rgb(55, 55, 55);
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: rgb(0, 146, 231);
+            text-align: center;
+            text-decoration: underline;
+        }
+
+        h1{
+            text-align: center;
+            text-decoration: underline;
+            background-color: rgb(7, 5, 146);
+            border-radius: 9px;
+            padding: 7px;
+        }
+
+        p, div{
+            font-weight: bold;
+        }
+
+        p strong{
+            font-weight: bolder;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="tit">Starting</h1>
+    <p class="tit">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci nisi eaque officiis quis, recusandae illum iusto dolore itaque similique facere fugit natus ex voluptatem numquam quaerat. Laborum, consequuntur eos. Quibusdam!
+    </p>
+
+    <script>
+        /*
+     var div = document.getElementsTaBygName('div')[0]
+     window.document.write(div.innerText)
+
+     var m = window.document.getElementById('msg')
+     document.write(m.innerText)
+     
+     var text = doc
+     teste.innerTeument.getElementsByName('par')[1]
+     document.write(text.innerHTML)
+     
+     var teste = document.getElementsByClassName('teste')[0] xt = "eba";
+     teste.style.color = 'green';
+       */
+
+    var titulo = document.getElementsByClassName('.tit')[0]
+    window.alert(titulo.innerText);
+
+
+
+
+
+    </script>
+
+</body>
+</html>
