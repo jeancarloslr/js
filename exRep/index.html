@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repetições</title>
+</head>
+<body>
+
+    <h1>Digite um número para aparecer a tabuada deste número</h1>
+    <input type="number" name="multiplicador" id="multiplicador">
+    <input type="button" value="Go!" id="btn">
+    <div>
+        <p>Tabuada</p>
+
+    </div>
+
+    <script>
+
+    var botao = document.getElementById('btn')
+    botao.addEventListener('click', clicar)
+
+    function clicar(){
+
+     var multiplicador = window.document.getElementById('multiplicador').value;
+     var res = document.querySelector('div');
+     var contador = 1;
+     multiplicador = Number(multiplicador);
+
+     while (contador < 11) {
+       var resultado = multiplicador * contador
+       var linha = document.createElement("p")
+       linha.textContent= `${multiplicador} x ${contador} é ${resultado}`
+       res.appendChild(linha)
+       contador++
+
+}}
+
+
+
+    </script>
+</body>
+</html>
