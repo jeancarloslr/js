@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>...</title>
+</head>
+<body>
+
+<p>Number 1</p>
+<input type="number" name="numero1" id="numero1">
+<input type="button" value="GO" id="btngo">
+<div>
+
+</div>
+
+    <script>
+
+        var btn = document.getElementById('btngo');
+        btn.addEventListener('click', go)
+
+        function go(){
+
+             var n1 = document.getElementById('numero1').value
+             var res  = document.querySelector('div')
+
+             for(c=1; c <= n1; c++){
+
+                var linha = document.createElement("p")
+                linha.textContent = `${c}`                
+                res.appendChild(linha)
+
+             }              
+        }
+
+    </script>
+</body>
+</html>

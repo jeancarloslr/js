@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante</title>
+    
+</head>
+<body>
+    <h1>Restaurante do Jean</h1>
+    <main>
+
+        <div id="form">
+            <p>Digite seu nome </p>
+            <input type="text" name="nome" id="nome">
+            <p>Digite a quantidade em gramas consumida no Buffet</p>
+            <input type="number" name="peso" id="peso">
+            <br>
+            <input type="button" value = "CAUCULAR" onclick="caucular()" id="btn">
+        </div>
+        <div id="res">
+            
+
+        </div>
+    </main>
+    <script>
+
+       function caucular(){
+
+       var name = window.document.getElementById('nome').value
+       var peso = window.document.getElementById('peso').value
+       var res = document.getElementById('res')
+       var valorAP = (70 * peso) /1000
+
+
+       res.innerHTML = `Olá ${name}, o valor a pagar é ${valorAP}`
+
+
+
+
+        
+       }
+
+
+   </script>
+</body>
+
+
+</html>
