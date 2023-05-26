@@ -1,7 +1,5 @@
 
-
 function contar(){
-
 
     var inicio = document.getElementById('inicio').value
     var fim = document.getElementById('fim').value
