@@ -6,14 +6,11 @@ function contar(){
     var passo = Number(document.getElementById('passo').value)
     var res = document.getElementById('res')
 
-
     while(cont <= fim){
-
         var linha = document.createElement('p');
         linha.textContent = `${cont}`;
         res.appendChild(linha);
         cont += passo;
-        
     }
 
 }
