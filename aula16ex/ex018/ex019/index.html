@@ -21,6 +21,15 @@
             font-weight: bolder;
         }
 
+
+        #seltab{
+            width: 120px;
+            padding: 8px;
+            margin: 10px;
+            overflow: hidden;
+           
+        }
+
     </style>
 </head>
 <body>
@@ -28,10 +37,16 @@
     <h1>Tabuada</h1>
 
     <p>Insira um número</p>
-    <input type="number" name="number" id="number">
+    <input type="number" name="number" id="txtn">
     <input type="button" value="Gerar Tabuada" onclick="gerar()">
 
-    <div id="res">
+    <div>
+
+        <select name="tabuada" id="seltab" size="10">
+
+            <option>Go ahead</option>
+         
+        </select>
 
     </div>
 </body>

@@ -25,7 +25,7 @@ function contar(){
         if(i < 10){
             //Contagem crescente
            for(let c = i; c<=f; c+=p){
-           res.innerHTML += `\u{1F449} ${c} `
+           res.innerHTML += `4\u{1F49} ${c} `
            }
         }
         else{
