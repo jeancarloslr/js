@@ -13,12 +13,16 @@ function adicionar() {
 
     var number = Number(impt.value);
 
+    if(number == item.value){
+      alert('Digite um valor diferente');
+    }
+
     let item = document.createElement('option')
-    item.text = `Número ${number} selecionado`
+    item.text = `${number}`
     select.appendChild(item);
 
     let options = [];
-    options.push(item.text);
+    options.push(number);
     
     console.log(options.sort());
 
@@ -27,7 +31,9 @@ function adicionar() {
   } 
 }
 
+function Finalizar(){
 
-   
-    
+
+}
+
 /**/
