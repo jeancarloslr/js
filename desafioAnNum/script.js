@@ -16,22 +16,29 @@ function isNumero(n){
   }
 }
 
-function inLista(n, L){
+function inLista(n, l){
+
+  if(l.indexOf(Number(n)) != -1){
+      return true;
+  }else{
+    return false;
+  }
 
 }
-
 
 function adicionar(){
 
- if(isNumero(num.value) && !inLista(num.value, valores)){
+ if(isNumero(num.value) && !inLista(num.value, valores)) {
 
-
+  console.log('tudo ok')
 
  }else{
-    window.alert('Valor inválido ou já encontrado na lista')
+    window.alert('Valor inválido ou já ncontrado na lista')
  }
+ 
 
 }
+
 
 /*var item = document.createElement('option')
 item.text = `${number}`
