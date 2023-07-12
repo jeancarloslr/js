@@ -6,13 +6,13 @@ let valores = []
 function isNumero(n){
     if(Number(n) >= 1 && Number(n) <= 100){
         return true;
-  }else{
-    return false;
-  }
+    }else{
+        return false;
+    }
 }
 
 function inLista(n, l){
-  if(l.indexOf(Number(n)) != -1){
+  if(l.indexOf(Number(n)) != -1){       //verifica se ta na lista ou não
       return true;
   }else{
     return false;
