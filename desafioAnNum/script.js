@@ -12,7 +12,7 @@ function isNumero(n){
 }
 
 function inLista(n, l){
-  if(l.indexOf(Number(n)) != -1){       //verifica se ta na lista ou não
+  if(l.indexOf(Number(n)) != -1){     //verifica se ta na lista ou não
       return true;
   }else{
     return false;
@@ -20,11 +20,22 @@ function inLista(n, l){
 }
 
 function adicionar(){
+
  if(isNumero(num.value) && !inLista(num.value, valores)) {
-  console.log('tudo ok')
+    
+  
+    let valor = num.value;
+  
+    var item = document.createElement('option');
+    item.text = `${valor} adicionado`;
+    list.appendChild(item);
+    num.value = "";
+
+
  }else{
     window.alert('Valor inválido ou já ncontrado na lista.')  
  }
+ 
 }
 
 /*var item = document.createElement('option')
