@@ -23,21 +23,19 @@ function adicionar(){
 
  if(isNumero(num.value) && !inLista(num.value, valores)) {
     
-  
-    let valor = num.value;
-  
-    var item = document.createElement('option');
-    item.text = `${valor} adicionado`;
-    list.appendChild(item);
-    num.value = "";
+  let valor = num.value;
+  valores.push(Number(valor))
 
+  let item = document.createElement('option')
+  item.text = `${valor} selecionado.`
+  list.appendChild(item);
 
+  
  }else{
+
     window.alert('Valor inválido ou já ncontrado na lista.')  
  }
- 
-}
 
-/*var item = document.createElement('option')
-item.text = `${number}`
-select.appendChild(item);*/
+ num.value = "";
+ num.focus();
+}
