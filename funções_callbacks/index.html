@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Callbacks</title>
+</head>
+<body>
+    
+    <script>
+        function exibirArtigo(id, callbackSucesso, callbackErro){
+            //lógica: recuperar o id via requisição http
+            if(true){
+                callbackSucesso('Funções de callbacks em JS', 'Funções de callbacks são muito usadas em JS')
+            }else{
+                callbackErro('Erro ao recuperar os dados');
+            }
+        }
+
+        
+    </script>
+</body>
+</html>
