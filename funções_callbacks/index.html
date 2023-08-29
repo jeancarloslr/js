@@ -4,6 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Callbacks</title>
+    <style>
+        #titulo{
+            color: blue;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            text-decoration: underline;
+            padding: 30px;
+            margin: 40px;
+            color: red;
+              }
+    </style>
 </head>
 <body>
     
@@ -17,7 +27,19 @@
             }
         }
 
-        
+        var callbackSucesso = function(text, text2){
+            window.document.write('<h1>Congratulations</h1>')
+            document.write('<h1 id="titulo">' + text + '</h1>');
+            document.write('<p>' + text2 + '</p>');
+        }
+
+        var callbackErro = function(texto){
+
+            console.log(texto);
+
+        }
+
+        exibirArtigo(1, callbackSucesso, callbackErro);
     </script>
 </body>
 </html>
