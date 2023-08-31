@@ -1,43 +1,46 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jean Carlos Leandro Rosa</title>
 </head>
+
 <body>
     <h1>Practice Callback Functions</h1>
 
     <input type="text" name="" id="inpt">
-    <button id="btn">Calcular</button>
+    <button id="btn" onclick="go(sucess,)">Calcular</button>
 
     <div id="res"></div>
 
 
     <script>
+
         var btn = window.document.getElementById('btn');
+        var res = document.getElementById('res'); // Movendo a variável res para o escopo global
 
-        btn.addEventListener('click', go)
 
-        function go(sucess, fail){
-            var res = document.getElementById('res');
+        function go(sucess, fail) {
             var impt = document.getElementById('inpt');
-            if(!impt.value){
-                fail("Tente novamente")
-            }else{
-                sucess("that's a piece of cake")
+            if (!impt.value) {
+                fail("Tente novamente");
+            } else {
+                sucess("that's a piece of cake");
             }
         }
-                   
-        var sucess = function(eba){
+
+        let sucess = function (eba) {
             res.innerHTML = `${eba} mi amigo!`;
         }
 
-        var fail = function(error){
+        let fail = function (error) {
             res.innerHTML = `${error} mi amigo.`;
         }
 
-        go(sucess, fail);
+
     </script>
 </body>
+
 </html>
