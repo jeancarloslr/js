@@ -6,8 +6,30 @@
     <title>try..catch.</title>
 </head>
 <body>
+    <!--Tratamento de erros é justamente uma tecnica que podemos enpregar em aolgumas partes do nosso código para evitar que erros interrompam a nossa aplicação, podemos deixar a aplicação reativa-->
+
+    <input type="number" name="" id="n1">
+    <input type="number" name="" id="n2">
+    <button id="btn" onclick="somar()">Go</button>
     
+</body>
 <script>
+
+    try{/*o try pega o erro, no entanto não faz nada.*/
+        function somar(){
+          var numero1 = (window.document.getElementById('n1').value;
+          var numero2 = parseFloat(window.document.getElementById('n2').value;
+
+          var tot = (numero1 + numero2)
+        }
+    }catch(erro)/*Tratar a excessão*/{
+  
+    } finally/*Código que sempre deve ser executado.*/{
+    }
+
+    function verificarTexto(){
+        alert('opa');
+    }
 </script>
 </body>
 </html>
