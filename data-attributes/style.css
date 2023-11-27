@@ -1,0 +1,50 @@
+
+[data-attribute = "batman"]{
+    background-image: linear-gradient(to top, white, black);
+}
+
+[data-attribute = "blue"]{
+    background-image: linear-gradient(to top, white, rgb(6, 170, 215));
+}
+
+[data-attribute = "green"]{
+    background-image: linear-gradient(to top, white, rgb(6, 215, 135));
+    
+}
+*{
+    margin: 0;
+}
+
+main{
+    position: relative;
+    height: 100vh;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-image: linear-gradient(to top, white, rgb(60, 59, 59), black);
+}
+
+h1{
+    position: absolute;
+    font-weight: lighter;
+    font-size: 1.7em;
+    width: 330px;
+    text-align: justify;
+    top: 40%;
+    left: 7%;
+    color: white;
+}
+
+
+#container-img{
+    position: relative;
+    width: 600px;
+    height: 400px;
+    left: 45%;
+    top: 120px;
+    filter: brightness(50%);
+}
+
+img{
+    height: 100%;
+    width: 100%;
+}
+
