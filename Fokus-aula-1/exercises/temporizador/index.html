@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temporizador</title>
+</head>
+<body>
+    <main>
+        <div>
+         <span id="hour">00</span>
+         <span>:</span>
+         <span id="minutes">00</span>
+         <span>:</span>
+         <span id="sec">00</span>
+        </div>
+    </main>
+
+    <script>
+        var hour = document.getElementById('hour');
+        var minutes = document.getElementById('minutes');
+        var seconds = document.getElementById('sec');
+
+        setInterval(() => {
+            let date = new Date();
+            let hours = date.getHours();
+            let min = date.getMinutes();
+            let sec = date.getSeconds();
+            
+            hour.innerHTML = `${hours}`;
+            minutes.innerHTML = `${min}`;
+            seconds.innerHTML = `${sec}`;
+        }, 1000);
+
+        function verify(){
+        }
+        </script>
+</body>
+</html>

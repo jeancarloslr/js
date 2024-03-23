@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planche</title>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/planche.css">
+</head>
+<body>
+    <span id="timer">50</span>  
+    <section class="controle">
+        
+        <div class="musicController">
+            <p>Música</p>
+            <label class="toggle">
+                <input type="checkbox" id="alternar-musica" onchange="altMusica()">
+                <span class="slider"></span>
+              </label>
+            </div>
+
+        <div class="button">
+            <button id="btn"><img src="../assets/img/play_arrow.png" alt="" id="icon"><span class="content">Iniciar</span></button>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

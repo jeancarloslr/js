@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cronômetro</title>
+</head>
+<body>
+    <span id="content">10</span>
+    <button class="iniciar">go</button>
+    <button class="pausar">pause</button>
+    <script>
+        var btnInicio = document.querySelector('.iniciar');
+        var btnPause = document.querySelector('.pausar');
+        var timer = document.getElementById('content');
+        var time = 10;
+        var intervaloId = null;
+
+        function cronometro(){
+            if(time <= 0){
+                pausar();
+            }else{
+                time -= 1;
+                timer.innerHTML = `${time}`;
+            }
+        }
+        btnInicio.addEventListener('click', iniciar);
+        function iniciar(){
+            intervaloId = setInterval(cronometro, 1000);
+        } 
+        btnPause.addEventListener('click', pausar);
+        function pausar(){
+           if(intervaloId){
+             clearInterval(intervaloId);
+             intervaloId = null;
+           }
+        }
+</script>
+</body>
+</html>

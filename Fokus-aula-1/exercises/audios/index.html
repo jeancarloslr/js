@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn-audio">Play</button>
+    <button id="btn-pause">Pause</button>
+
+    <script>
+        var audio = document.getElementById('btn-audio');
+        var pausar = window.document.getElementById('btn-pause');
+        var music = new Audio('../../sons/luna-rise-part-one.mp3');
+        music.loop = true;
+    
+        audio.addEventListener('click', reproduzir);
+        pausar.addEventListener('click', pause);
+    
+        function reproduzir(){
+            music.play();
+        }
+
+        function pause(){
+            music.pause();
+        }
+    </script>
+</body>
+
+</html>
